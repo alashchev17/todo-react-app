@@ -1,0 +1,42 @@
+.button {
+  padding: 11px 16px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  border: unset;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #4DD599;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  &--primary {
+    &:hover {
+      background-color: darken(#4DD599, 10%);
+    }
+    &:active {
+      background-color: darken(#4DD599, 20%);
+    }
+    &:disabled {
+      background-color: #CBCBCB;
+      cursor: not-allowed;
+    }
+  }
+  &--secondary {
+    background-color: #F4F6F8;
+    color: #9C9C9C;
+    &:hover {
+      background-color: darken(#F4F6F8, 3%);
+      color: darken(#9C9C9C, 3%);
+    }
+    &:active {
+      background-color: darken(#F4F6F8, 6%);
+      color: darken(#9C9C9C, 6%);
+    }
+    &:disabled {
+      background-color: #F4F6F8;
+      cursor: not-allowed;
+    }
+  }
+}
